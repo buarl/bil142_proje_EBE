@@ -26,14 +26,14 @@ public:
 
 public:
 
-    int yakitOgrenme () const;
+    int yakitOgrenm
+    int PuanHesaplama();e () const;
     int saglikOgrenme() const;
     int paraOgrenme() const;
     void paraGuncelleme(int);
     void yakitGuncelleme(int);
     void saglikGuncelleme(int);
     bool GemiKontrol() ;
-    int PuanHesaplama ();
-
+    
 };
 #endif //DENEME_GEMI_H
