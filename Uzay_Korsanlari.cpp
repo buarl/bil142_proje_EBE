@@ -4,36 +4,35 @@
 using namespace std;
 
 bool Uzay_Korsanlari::KacmaSonucu() {
-    int KacmaIhtimali{50}; 
+    int KacmaIhtimali{50};
     int randomGeneratedNumber =rand()%100;
-    
-     if(static_cast<int>(randomGeneratedNumber*ThisGemi->hizKatsayisi)>=KacmaIhtimali)
-     {
-         return true;
-     }
-     else
-     {
+
+    if(static_cast<int>(randomGeneratedNumber*BuGemi->hizKatsayi)>=KacmaIhtimali)
+    {
+        return true;
+    }
+    else
+    {
         return false;
-     }
+    }
 }
 
-void UzayKorsanlari::Deal()
+void Uzay_Korsanlari::Deal()
 {
- UzayKorsanlariDealFonksiyonu();
+    UzayKorsanlariDealFonksiyonu();
 }
+void Uzay_Korsanlari:: UzayKorsanlariDealFonksiyonu() {
 
-void UzayKorsanlari:: UzayKorsanlariDealFonksiyonu() {
-  
-    int randomGeneratedNumber =static_cast<int>(std::rand()%100);/
-    const int istenenPara{3}; 
-    const int herDegerArasindaKacAltinOlsun{10}; 
-    int ihtimal=static_cast<int> (100/istenenPara);
-    for (int sayac{1};sayac<=istenenPara; ++sayac)
+    int randomGeneratedNumber =static_cast<int>(std::rand()%100);
+    const int istenenPara{3};
+    const int herDegerArasindaKacAltinOlsun{10};
+    int ihtimal=static_cast<int> (100/3);
+    for (int sayac{1};sayac<=3; ++sayac)
     {
         if((sayac*ihtimal>randomGeneratedNumber)&& (sayac-1)*ihtimal<=randomGeneratedNumber)
         {
-            ThisGemi->paraGuncelleme(-(sayac*herDegerArasindaKacAltinOlsun));
-            cout<<"Hesabinizdaki Para "<<ThisGemi->ParaOgrenme()<<"\n";
+            BuGemi->paraGuncelleme(-(sayac*herDegerArasindaKacAltinOlsun));
+            cout<<"Hesabinizdaki Para "<<BuGemi->paraOgrenme()<<"\n";
         }
     }
 }
