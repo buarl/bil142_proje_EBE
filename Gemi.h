@@ -18,11 +18,11 @@ public:
     float dayaniklilikKatsayi{1.0};
     float yakitAzalmaKatsayi{1.0};
 
-    virtual void hiz_Belirleme  () = 0 ;
-    virtual void dayaniklilik_Belirleme () = 0 ;
-    virtual void para_Belirleme () = 0 ;
-    virtual void saglik_Belirleme () = 0 ;
-    virtual void yakit_Belirleme () = 0 ;
+    virtual void hiz_Ayarlama  () = 0 ;
+    virtual void dayaniklilik_Ayarlama () = 0 ;
+    virtual void para_Ayarlama () = 0 ;
+    virtual void saglik_Ayarlama () = 0 ;
+    virtual void yakit_Ayarlama () = 0 ;
 
 public:
 
