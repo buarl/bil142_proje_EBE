@@ -26,8 +26,8 @@ public:
 
 public:
 
-    int yakitOgrenm
-    int PuanHesaplama();e () const;
+    int yakitOgrenme() const;
+    int PuanHesaplama() const;
     int saglikOgrenme() const;
     int paraOgrenme() const;
     void paraGuncelleme(int);
