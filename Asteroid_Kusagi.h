@@ -14,5 +14,4 @@ public:
 
   };
 }
-
 void Asteroid_Kusagi::safSanalFonksiyon() {}
