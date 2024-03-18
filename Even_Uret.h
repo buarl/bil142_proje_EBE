@@ -12,4 +12,5 @@ public:
     const int OlayCagirmaSayisi{5};
 };
 
+
 #endif
