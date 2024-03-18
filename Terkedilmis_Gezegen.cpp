@@ -4,7 +4,7 @@
 using namespace std;
 
 void Terkedilmis_Gezegen::uzayKorsaniAltinOlasilikFonksiyonu() {
-    int randomGeneratedNumber = rand() % 100; 
+    int randomGeneratedNumber = rand() % 100;
     const int KazanilanAltin = 10;
     const int AltinOlasilik = 50;
 
@@ -18,7 +18,7 @@ void Terkedilmis_Gezegen::uzayKorsaniAltinOlasilikFonksiyonu() {
 
 void Terkedilmis_Gezegen::TerkEdilmisGezegendekiUzayKorsanlariIcinFonksiyon() {
     cout << "UZAY KORSANLARI IS HERE!!!!!\n";
-    auto NewUzayKorsanlariEvent = make_shared<UzayKorsanlari>(ThisGemi);
+    auto NewUzayKorsanlariEvent = make_shared<Uzay_Korsanlari>(BuGemi);
 }
 
 void Terkedilmis_Gezegen::uzayKorsaniAltin() {
@@ -33,6 +33,6 @@ void Terkedilmis_Gezegen::pureVirtualYapanFonksiyon() {
     // Pure virtual fonksiyonun uygulanması
 }
 
-Terkedilmis_Gezegen::Terkedilmis_Gezegen(shared_ptr<Gemi> AlinanGemi) : ThisGemi(move(AlinanGemi)) {
+Terkedilmis_Gezegen::Terkedilmis_Gezegen(shared_ptr<Gemi> AlinanGemi) : BuGemi(move(AlinanGemi)) {
     uzayKorsaniAltin();
 }
