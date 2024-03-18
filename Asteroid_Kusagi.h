@@ -1,18 +1,18 @@
 #include <iostream>
 #include "Event.h"
-#ifndef PROJEDENEME1_ASTEROIDKUSAGI_H
-#define PROJEDENEME1_ASTEROIDKUSAGI_H
+#ifndef DENEME_ASTEROIDKUSAGI_H
+#define DENEME_ASTEROIDKUSAGI_H
 
 using namespace std;
 
-class AsteroidKusagi : public Event {
+class Asteroid_Kusagi : public Event {
 public:
     void GemiHasarAldiMi(int);
     void AsteroidKusagiFonksiyon();
     void pureVirtualYapanFonksiyon() override;
-    AsteroidKusagi(shared_ptr<Gemi> );
+    Asteroid_Kusagi(shared_ptr<Gemi> );
 
   };
 }
 
-void AsteroidKusagi::safSanalFonksiyon() {}
+void Asteroid_Kusagi::safSanalFonksiyon() {}
