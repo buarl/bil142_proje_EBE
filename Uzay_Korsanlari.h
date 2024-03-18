@@ -8,19 +8,19 @@ class Uzay_Korsanlari: public Event {
   public:
     void UzayKorsanlariniBaslatacakFonksiyon();
     void KullaniciTercihiAlmaFonksiyonu ();
-    void OlaylarArasindaBusinessLogicYapanFonk(int);
+    void OlaylarArasindakiFonk(int);
 
     const int UzayKorsanlariSecenek{3};
 
     bool KacmaSonucu();
     void SavasmaSonucu();
 
-    void PazarlikSonucu();
-    void UzayKorsanlariPazarlikFonksiyonu();
+    void Deal();
+    void UzayKorsanlariDealFonksiyonu();
 
     void pureVirtualYapanFonksiyon() override;
 
-    UzayKorsanlari(shared_ptr<Gemi>);
+    Uzay_Korsanlari(shared_ptr<Gemi>);
 
 };
 
