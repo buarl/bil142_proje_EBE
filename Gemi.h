@@ -36,4 +36,4 @@ public:
     bool GemiKontrol() ;
     
 };
-#endif //DENEME_GEMI_H
+#endif
