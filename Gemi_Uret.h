@@ -3,9 +3,9 @@
 #include "Gemi.h"
 #include"Event_Uret.h"
 
-class GemiUret {
+class Gemi_Uret {
 public:
-    GemiUret();
+    Gemi_Uret();
 protected:
     int EventCagirmaSayisi{5};
     void UserGemiUretFonksiyon();
