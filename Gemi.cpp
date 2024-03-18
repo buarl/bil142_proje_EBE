@@ -1,7 +1,6 @@
 #include<iostream>
 #include "Gemi.h"
 
-
 bool Gemi::GemiKontrol() {
     return yakit <= 0 || saglik <= 0;
 }
@@ -9,7 +8,7 @@ bool Gemi::GemiKontrol() {
 int Gemi::yakitOgrenme() const {
     return yakit;
 }
-int Gemi::ParaOgrenme() const {
+int Gemi::paraOgrenme() const {
     return para;
 }
 int Gemi::saglikOgrenme() const  {
@@ -24,22 +23,21 @@ void Gemi::saglikGuncelleme(int alinanHasar) {
     }
 }
 
- void Gemi:: yakitGuncelleme(int azalanYakit)
- {
-     if(yakit-azalanYakit*yakitAzalmaKatsayi>0)
-     {
-         yakit = yakit - static_cast<int>(yakitAzalmaKatsayi*azalanYakit);
-     }
-     else {
-       this->GemiOlduMu();
-     }
- }
+void Gemi:: yakitGuncelleme(int azalanYakit)
+{
+    if(yakit-azalanYakit*yakitAzalmaKatsayi>0)
+    {
+        yakit = yakit - static_cast<int>(yakitAzalmaKatsayi*azalanYakit);
+    }
+    else {
+        this->GemiKontrol();
+    }
+}
 
 void Gemi::paraGuncelleme(int deltaPara)
- {
-    this-> para = para + deltaPara; 
- }
-
+{
+    this-> para = para + deltaPara;
+}
 int Gemi::PuanHesaplama()
 {
     const double PuanHesaplama_GemiSagligiKatSayi{10.0};
@@ -50,6 +48,3 @@ int Gemi::PuanHesaplama()
 
     return ToplamPuan;
 }
-
-
-
