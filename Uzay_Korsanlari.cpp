@@ -25,13 +25,9 @@ void UzayKorsanlari::Deal()
 void UzayKorsanlari:: UzayKorsanlariDealFonksiyonu() {
   
     int randomGeneratedNumber =static_cast<int>(std::rand()%100);/
-
     const int istenenPara{3}; 
-
     const int herDegerArasindaKacAltinOlsun{10}; 
-
     int ihtimal=static_cast<int> (100/istenenPara);
-
     for (int sayac{1};sayac<=istenenPara; ++sayac)
     {
         if((sayac*ihtimal>randomGeneratedNumber)&& (sayac-1)*ihtimal<=randomGeneratedNumber)
