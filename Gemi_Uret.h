@@ -8,7 +8,7 @@ public:
     GemiUret();
 protected:
     int EventCagirmaSayisi{5};
-    void GemiUretUserFonskiyon();
+    void UserGemiUretFonksiyon();
     void GemiUretenFonksiyon(int);
     void EventUretenFonksiyon(shared_ptr<Gemi>);
     const int totalGemiTuru{3};
