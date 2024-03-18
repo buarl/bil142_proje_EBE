@@ -3,13 +3,13 @@
 using namespace std;
 
 #include "Event.h"
-class EventUret{
+class Event_Uret{
 public:
-    EventGenerator(shared_ptr<Gemi> );
+    Event_Uret(shared_ptr<Gemi> );
     const int TotalEventNumber{3};
-    shared_ptr<Gemi>  eventGenerateEtmekIcinGemi;
-    void EventGenerateEdecekFonksiyon();
-    const int OlayCagirmaSayisi{5};
+    shared_ptr<Gemi>  eventIcinGemi;
+    void EventUretecekFonksiyon();
+    const int EventCagirmaSayisi{5};
 };
 
 
